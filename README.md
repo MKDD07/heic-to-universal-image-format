@@ -12,7 +12,7 @@ Requirement
 !pip install ipywidgets
 
 Mount Google Drive
-"from google.colab import drive
-drive.mount('/content/drive')"
+"from google.colab import drive"
+"drive.mount('/content/drive')"
 
 For main script copy main_gc.py
