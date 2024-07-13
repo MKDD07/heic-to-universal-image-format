@@ -1,70 +1,84 @@
-HEIC to Universal Image Format Converter
-The HEIC to Universal Image Format Converter is a Python-based tool designed to convert HEIC (High Efficiency Image Coding) files to various widely-used image formats such as PNG, JPG, BMP, and TIFF. This tool ensures compatibility across different platforms and applications that may not support the HEIC format natively.
+Sure, here's a more attractive and detailed README for your GitHub repository:
 
-Features
-Multi-format Support: Convert HEIC files to PNG, JPG, BMP, and TIFF formats.
-Batch Conversion: Convert multiple HEIC files in a directory with a single command.
-User-friendly Interface: Simple and intuitive interface for selecting directories and formats.
-Automated Directory Handling: Automatically handles input and output directories, ensuring a smooth workflow.
-Requirements
+---
+
+# HEIC to Universal Image Format Converter
+
+The **HEIC to Universal Image Format Converter** is a Python-based tool designed to convert HEIC (High Efficiency Image Coding) files to various widely-used image formats such as PNG, JPG, BMP, and TIFF. This tool ensures compatibility across different platforms and applications that may not support the HEIC format natively.
+
+## Features
+
+- **Multi-format Support**: Convert HEIC files to PNG, JPG, BMP, and TIFF formats.
+- **Batch Conversion**: Convert multiple HEIC files in a directory with a single command.
+- **User-friendly Interface**: Simple and intuitive interface for selecting directories and formats.
+- **Automated Directory Handling**: Automatically handles input and output directories, ensuring a smooth workflow.
+
+## Requirements
+
 To run this tool locally, you need to have the following Python packages installed:
 
-sh
-Copy code
+```sh
 pip install pyheif Pillow
+```
+
 For Google Colab, you can install the required packages using:
 
-sh
-Copy code
+```sh
 !pip install pyheif Pillow
 !pip install ipywidgets
-Usage
-Local Usage
-Clone the repository:
+```
 
-sh
-Copy code
-git clone https://github.com/MKDD07/heic-to-universal-image-format.git
-cd heic-to-universal-image-format
-Install the required dependencies:
+## Usage
 
-sh
-Copy code
-pip install pyheif Pillow
-Run the script:
+### Local Usage
 
-sh
-Copy code
-python heic_converter.py
-Follow the prompts:
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/MKDD07/heic-to-universal-image-format.git
+   cd heic-to-universal-image-format
+   ```
 
-Select the input directory containing HEIC files.
-Select the output directory to save converted files.
-Choose the desired output format (PNG, JPG, BMP, TIFF).
-Google Colab Usage
-Mount Google Drive:
+2. **Install the required dependencies**:
+   ```sh
+   pip install pyheif Pillow
+   ```
 
-python
-Copy code
-from google.colab import drive
-drive.mount('/content/drive')
-Copy main_gc.py script to your Colab environment.
+3. **Run the script**:
+   ```sh
+   python heic_converter.py
+   ```
 
-Install the required dependencies:
+4. **Follow the prompts**:
+   - Select the input directory containing HEIC files.
+   - Select the output directory to save converted files.
+   - Choose the desired output format (PNG, JPG, BMP, TIFF).
 
-sh
-Copy code
-!pip install pyheif Pillow
-!pip install ipywidgets
-Run the main_gc.py script in your Colab environment:
+### Google Colab Usage
 
-python
-Copy code
-%run main_gc.py
-Example Script
-Local Python Script (heic_converter.py)
-python
-Copy code
+1. **Mount Google Drive**:
+   ```python
+   from google.colab import drive
+   drive.mount('/content/drive')
+   ```
+
+2. **Copy `main_gc.py` script to your Colab environment**.
+
+3. **Install the required dependencies**:
+   ```sh
+   !pip install pyheif Pillow
+   !pip install ipywidgets
+   ```
+
+4. **Run the `main_gc.py` script** in your Colab environment:
+   ```python
+   %run main_gc.py
+   ```
+
+## Example Script
+
+### Local Python Script (`heic_converter.py`)
+
+```python
 import os
 import pyheif
 from PIL import Image
@@ -121,8 +135,12 @@ for filename in os.listdir(input_dir):
         print(f'Converted {heic_path} to {output_path}')
 
 print("Conversion completed successfully!")
-Contributing
+```
+
+## Contributing
+
 We welcome contributions to enhance the functionality of this tool. Please submit a pull request or open an issue to discuss your ideas.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
