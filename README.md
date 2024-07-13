@@ -76,7 +76,7 @@ For Google Colab, you can install the required packages using:
 
 ## Example Script
 
-### Local Python Script (`heic_converter.py`)
+### Local Python Script (`main.py`)
 
 ```python
 import os
